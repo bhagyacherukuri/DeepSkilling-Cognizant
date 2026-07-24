@@ -1,0 +1,7 @@
+.course-card{
+    border:1px solid #ccc;
+    padding:15px;
+    margin:10px;
+    width:250px;
+    border-radius:8px;
+}
