@@ -1,0 +1,25 @@
+.course-card{
+    width:220px;
+    padding:20px;
+    margin:20px;
+    border:1px solid lightgray;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card--enrolled{
+    background:#dfffe0;
+}
+
+.card--full{
+    box-shadow:0 0 10px rgba(0,0,255,.3);
+}
+
+.expanded{
+    min-height:280px;
+}
+
+button{
+    margin-right:10px;
+    margin-top:10px;
+}

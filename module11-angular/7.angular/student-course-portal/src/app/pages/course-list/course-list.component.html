@@ -1,0 +1,29 @@
+<p *ngIf="isLoading">
+  Loading courses...
+</p>
+<div style="margin-bottom:20px">
+
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search Course">
+
+  <button (click)="searchCourses()">
+    Search
+  </button>
+
+</div>
+<div *ngIf="!isLoading">
+
+  <div
+    *ngFor="let course of courses; trackBy: trackByCourseId"
+    (click)="goToCourse(course)"
+    style="cursor:pointer; margin-bottom:15px;">
+
+    <app-course-card
+      [course]="course">
+    </app-course-card>
+
+  </div>
+
+</div>
